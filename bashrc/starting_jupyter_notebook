@@ -1,3 +1,14 @@
+#we need to connect to COmpute Canada using the normal ssh client with the tunnel option: 
+ssh -Y diladiga@beluga.computecanada.ca -L 8888:cn0526:8888
+
+After activate the virtual environment and load all the modules
+
 To start the application, submit an interactive job. Adjust the parameters based on your needs. 
 
 salloc --time=1:0:0 --ntasks=1 --cpus-per-task=2 --mem-per-cpu=20240M --account=rrg-yihuang-ad srun $VIRTUAL_ENV/bin/notebook.sh
+
+In the local computer write:
+ssh -L 8888:localhost:8888 diladiga@beluga.computecanada.ca
+
+GO to the local browser and type:
+localhost:8888/
