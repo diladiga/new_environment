@@ -1,0 +1,13 @@
+#Source: https://prashp.gitlab.io/post/compute-canada-tut/#3-setting-up-your-environment
+
+In Compute Canada, you should use your Project directory, which will be placed under your supervisor’s directory and look something like: 
+~/projects/def-supervisor/your-username
+
+This is a good location to store your git repositories, job scripts, and any binary files associated with your project. 
+Because the Project filepath is not necessarily easy to remember, you can define an alias or environment variable as a shortcut to get to it more quickly. 
+To do this, add the following line at the end of the .bashrc file or in .bash_aliases file:
+
+export project=~/projects/def-supervisor/your-username
+
+Now whenever you use the variable $project when logged into CC, it will refer to your project directory. 
+So for example cd $project will take you to your project directory. 
