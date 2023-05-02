@@ -1,0 +1,19 @@
+pip install numpy --no-index
+pip install pandas --no-index
+pip install xarray --no-index
+pip install matplotlib --no-index
+pip install seaborn --no-index
+pip install sklearn --no-index
+
+
+
+# We can use "avail_wheels library" to see if the library is available in the wheels
+
+
+The pip command can install packages from a variety of sources, including PyPI and pre-built distribution packages called Python wheels. 
+Compute canada provides Python wheels for a number of packages. 
+
+the --no-index option tells pip to not install from PyPI, but instead to install only from locally-available packages, i.e. our wheels.
+
+Compared to using packages from PyPI, wheels that have been compiled by our staff can prevent issues with missing or conflicting dependencies, 
+and were optimised for our clusters hardware and libraries.
