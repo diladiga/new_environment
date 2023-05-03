@@ -13,6 +13,7 @@ salloc --time=1:0:0 --ntasks=1 --cpus-per-task=2 --mem-per-cpu=20240M --account=
 
 In the local computer write:
 ssh -Y diladiga@beluga.computecanada.ca -L 8888:bl12445:8888
+*you need to change the node depending on the node assigned, in this case it was bl12445 but it will vary
 
 GO to the local browser and type the URL provided before but change calculquebec... to localhost
 YES:
