@@ -8,8 +8,10 @@ cd $project
 
 To start the application, submit an interactive job. Adjust the parameters based on your needs. 
 
-salloc --time=1:0:0 --ntasks=1 --cpus-per-task=2 --mem-per-cpu=20240M --account=def-yihuang srun $VIRTUAL_ENV/bin/notebook.sh
-#salloc -N 1 -n 1 -c 2 --mem=0 -t 3:00:00 --account=rrg-yihuang-ad
+salloc --time=1:0:0 --ntasks=1 --cpus-per-task=2 --mem-per-cpu=20240M --account=rrg-yihuang-ad srun $VIRTUAL_ENV/bin/notebook.sh
+salloc --time=4:0:0 --ntasks=1 --cpus-per-task=4 --mem-per-cpu=10G --account=rrg-yihuang-ad srun $VIRTUAL_ENV/bin/notebook.sh
+
+#salloc -N 1 -n 1 -c 2 --mem=0 -t 3:00:00 --account=rrg-yihuang-ad ; def-yihuang
 
 In the local computer write:
 ssh -Y diladiga@beluga.computecanada.ca -L 8888:bl12445:8888
