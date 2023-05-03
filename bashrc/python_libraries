@@ -7,7 +7,7 @@ pip install sklearn --no-index
 pip install --no-index tensorflow==2.8
 pip install --no-index keras  #in my case it was installed with tensorflow 
 pip install ann_visualizer
-
+pip install graphviz --no-index
 
 # We can use "avail_wheels library" to see if the library is available in the wheels
 
