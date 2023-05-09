@@ -23,4 +23,7 @@ YES:
 http://localhost:8888/?token=db2932146658efd0d2899a4021e3b29f0feadf501af86b70 
 NO:
 http://127.0.0.1:8888/?token=db2932146658efd0d2899a4021e3b29f0feadf501af86b70
-80G
+
+
+export ECCODES_DIR=/home/diladiga
+
