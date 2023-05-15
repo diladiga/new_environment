@@ -1,0 +1,14 @@
+#!/bin/bash
+#SBATCH --account=rrg-yihuang-ad
+#SBATCH --time=2-00:00
+#SBATCH --ntasks=1
+#SBATCH --mem=160G    #186G maximum
+#SBATCH --output=train_nn_Out.%j  
+
+#OPTIONAL JOB SPECIFICATIONS
+#SBATCH --mail-user=diana.diazgarcia@mail.mcgill.ca
+#SBATCH --mail-type=ALL
+
+#First Executable Line
+
+python bivariateFeedback-2nodes_2inputVars.py
