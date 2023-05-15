@@ -1,12 +1,17 @@
 #submit a job to run
 sbatch array_job_test.sh
+
 #check the status of your jobs
 sq
+
 #if you want more details use seff followed by the ID of the job
 seff 37392986
 
 #if you want even more info, use sacct -j id
 sacct -j 37392986
+
+#to see all the jobs of rrg-yihuang
+squeue |grep rrg-yihuang
 
 #to check how the job is going, use cat outputfile%j
 cat testOut.37392986
