@@ -2,6 +2,7 @@ pip install numpy --no-index
 pip install pandas --no-index
 pip install xarray --no-index
 pip install matplotlib --no-index
+pip install --no-index plotly
 pip install seaborn --no-index
 pip install sklearn --no-index
 pip install --no-index tensorflow==2.8
